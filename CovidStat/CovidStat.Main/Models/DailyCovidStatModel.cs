@@ -16,6 +16,6 @@ namespace CovidStat.Main.Models
         public int NewRecovered { get; set; }
         public int NewHospitalized { get; set; }
         public int NewDeaths { get; set; }
-        public int UpdateDate { get; set; }
+        public string UpdateDate { get; set; }
     }
 }

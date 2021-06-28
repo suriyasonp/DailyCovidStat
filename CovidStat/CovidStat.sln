@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CovidStat.API", "CovidStat.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidStat.Main", "CovidStat.Main\CovidStat.Main.csproj", "{9A8442C7-C47B-4C30-AC1E-C1C56BF5847C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovidStat.WPF", "CovidStat.WPF\CovidStat.WPF.csproj", "{22EB04AB-C006-4383-A0B2-3A600B0C861F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9A8442C7-C47B-4C30-AC1E-C1C56BF5847C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A8442C7-C47B-4C30-AC1E-C1C56BF5847C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A8442C7-C47B-4C30-AC1E-C1C56BF5847C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22EB04AB-C006-4383-A0B2-3A600B0C861F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EB04AB-C006-4383-A0B2-3A600B0C861F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EB04AB-C006-4383-A0B2-3A600B0C861F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EB04AB-C006-4383-A0B2-3A600B0C861F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
