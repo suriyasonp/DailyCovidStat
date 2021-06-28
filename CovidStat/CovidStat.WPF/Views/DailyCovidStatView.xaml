@@ -8,6 +8,11 @@
         mc:Ignorable="d"
         Title="DailyCovidStatView" Height="450" Width="800">
     <Grid>
-        <controls:Card HorizontalAlignment="Center" DataContext="{Binding DailyStatViewModel}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="0 0 10 10" Grid.Row="0" FontSize="30" HorizontalAlignment="Center" Text="สถานการณ์ COVID-19 ในประเทศไทย"/>
+        <controls:Card Grid.Row="1" HorizontalAlignment="Center" DataContext="{Binding DailyStatViewModel}"/>
     </Grid>
 </Window>
