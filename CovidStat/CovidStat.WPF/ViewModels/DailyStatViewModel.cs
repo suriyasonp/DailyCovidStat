@@ -9,14 +9,15 @@ namespace CovidStat.WPF.ViewModels
         public DailyStatViewModel(IDailyCovidStatService dailyCovidStatService)
         {
             _dailyCovidStatService = dailyCovidStatService;
+            LoadDailyStat();
         }
 
-        public static DailyStatViewModel LoadDailyStatViewModel(IDailyCovidStatService dailyCovidStatService)
-        {            
-            DailyStatViewModel dailyStatViewModel = new DailyStatViewModel(dailyCovidStatService);
-            dailyStatViewModel.LoadDailyStat();
-            return dailyStatViewModel;
-        }
+        //public static DailyStatViewModel LoadDailyStatViewModel(IDailyCovidStatService dailyCovidStatService)
+        //{            
+        //    DailyStatViewModel dailyStatViewModel = new DailyStatViewModel(dailyCovidStatService);
+        //    dailyStatViewModel.LoadDailyStat();
+        //    return dailyStatViewModel;
+        //}
 
         private void LoadDailyStat()
         {           
