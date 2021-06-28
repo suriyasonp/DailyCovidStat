@@ -1,8 +1,6 @@
-﻿using CovidStat.API.Services;
-using CovidStat.Main.Models;
-using CovidStat.Main.Services;
+﻿using CovidStat.Main.Services;
 
-namespace CovidStat.WPF.Models
+namespace CovidStat.WPF.ViewModels
 {
     public class DailyStatViewModel : ViewModelBase
     {

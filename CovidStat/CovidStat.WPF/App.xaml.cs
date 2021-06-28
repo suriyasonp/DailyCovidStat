@@ -1,5 +1,7 @@
 ﻿using CovidStat.API.Services;
 using CovidStat.WPF.Models;
+using CovidStat.WPF.ViewModels;
+using CovidStat.WPF.Views;
 using System.Windows;
 
 namespace CovidStat.WPF
@@ -9,5 +11,13 @@ namespace CovidStat.WPF
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            Window window = new DailyCovidStatView();
+            window.DataContext = new DailyStatViewModel(new DailyCovidStatService());
+            window.Show();
+            base.OnStartup(e);
+        }
+
     }
 }

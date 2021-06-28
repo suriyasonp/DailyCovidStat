@@ -2,8 +2,17 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:CovidStat.WPF"
-             StartupUri="HomeView.xaml">
+             xmlns:views="clr-namespace:CovidStat.WPF.Views"
+             xmlns:viewmodels="clr-namespace:CovidStat.WPF.ViewModels"
+            >
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate DataType="{x:Type viewmodels:DailyStatViewModel}">
+                <views:DailyCovidStatView/>
+            </DataTemplate>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
